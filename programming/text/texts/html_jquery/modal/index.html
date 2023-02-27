@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptの学習</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal-default-theme.min.css">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <a href="#modal">モダール</a>
+    <div class="remodal" data-remodal-id="modal">
+        <!-- idの属性値とhrefの属性値を同じにすることでモーダルを開くためのリンクを作成している。 -->
+         <p>はじめてのモーダル</p>
+        <!-- div要素の中身がモーダルに表示される部分。 -->
+        <button data-remodal-action="cancel" class="remodal-cancel">戻る</button>
+        <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+    </div>
+    <!-- モーダルで検索 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.js"></script>
+       <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+.btn1{
+    display: block;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    background-color: #eb6100;
+    border-radius: 100px;
+    text-align: center;
+    margin:10px;
+}
+.btn2{
+    display: block;
+   width: 150px;
+   height: 40px;
+   color: #fff;
+   background-color: #eb6100;
+   border-radius: 100px;
+   text-align: center;
+   margin:10px;
+}
+.btn3{
+    display: block;
+   width: 150px;
+   height: 40px;
+   color: #fff;
+   background-color: #eb6100;
+   border-radius: 100px;
+   text-align: center;
+   margin:10px;
+}
+.src1{
+    width: 600px;
+    height: 500px;
+}
+.src2{
+    width: 600px;
+    height: 500px;
+}
+.src3{
+    width: 600px;
+    height: 500px;
+}

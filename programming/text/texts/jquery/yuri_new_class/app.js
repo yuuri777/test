@@ -1,0 +1,1 @@
+$("#new-color").html('<div class="add-class"></div>')

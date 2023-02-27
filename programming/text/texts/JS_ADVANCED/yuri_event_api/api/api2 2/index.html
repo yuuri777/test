@@ -1,0 +1,276 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+
+  <script type="text/javascript">
+    window.onload = function onLoad() {
+      var params = new URLSearchParams(window.location.search);
+      let c=console.log;
+c(params);
+    
+    var paramskey = params.keys();//キーのみ出力
+    c(paramskey);
+    
+    var target = document.getElementById("param_out1");
+    
+    for (p of paramskey) {//pという変数を作った。
+      target.innerHTML += p +"<br/>";//pの変数の中にパラメータのキーを入れた。targetの場所に表示。
+    }//=だと一番下のキーのみしか出力できない。+=にすることで順番に出力できる。
+
+    var paramsentry = params.entries();//キーとバリュー両方出す。
+    c(paramsentry);//for文でからの配列に入れているからこの時点では空のオブジェクト
+    var target = document.getElementById("param_out2");
+    for (e of paramsentry) {
+      //target.innerHTML += e+"<br/>";//これは配列としての出力なので：ではなく,で出る
+      target.innerHTML += e[0] +":" + e[1] + "<br/>";
+    }
+  }
+</script>
+</head>
+<body>
+<div>パラメーター</div>
+<hr />
+<p>パラメーター キー:</p>
+<div id="param_out1"></div>
+<hr />
+<p>パラメーター キーと値:</p>
+<div id="param_out2"></div>
+</body>
+</html>-->
+
+<!--url取得<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script type="text/javascript">
+      let c=console.log;
+        window.onload = function onLoad() {
+          var param = GetQueryString();
+            
+          var target = document.getElementById("param_q_out");
+          if (param == null || param["q"] == undefined) {
+            target.innerHTML = "パラメーターはありません。";
+          } else {
+            target.innerHTML = param["q"];
+          }
+          console.log(param);//オブジェクト
+          var target = document.getElementById("param_mode_out");
+          if (param == null || param["mode"] == undefined) {
+            target.innerHTML = "パラメーターはありません。";
+          }
+          else {
+            target.innerHTML = param["mode"];
+          }
+         console.log(param);//オブジェクト一番最後のパラメータが出る
+        }
+          
+
+        function GetQueryString() {
+            if (1 < document.location.search.length) {
+                var query = document.location.search.substring(1);
+                var parameters = query.split('&');
+                console.log(parameters);//splitで&を区切って配列に
+                var result = new Object();
+                for (var i = 0; i < parameters.length; i++) {
+                    var element = parameters[i].split('=');
+                  console.log(element)//変数と値の配列をセットに出力
+                
+                    var paramName = decodeURIComponent(element[0]);//elementの変数を取得
+                    var paramValue = decodeURIComponent(element[1]);//elemnetの値を取得
+
+                    result[paramName] = decodeURIComponent(paramValue);
+                }
+                
+                c(paramName);
+                c(paramValue);
+                console.log(result);
+                return result;
+
+            }
+            return null;
+        }
+        
+    </script>
+</head>
+<body>
+  <div>パラメーター</div>
+  <hr />
+  <p>パラメーター q:</p>
+  <div id="param_q_out"></div>
+
+  <hr />
+  <p>パラメーター mode:</p>
+  <div id="param_mode_out"></div>
+</body>
+</html>-->
+
+<!--indexof 配列<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptの学習</title>
+</head>
+
+<body>
+  
+     <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html> -->
+<!-- url出力<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptの学習</title>
+    <link rel="manitest" href="site.webmanitest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <div class="container">このページのURLは「<span id="urlparam"></span>」です。</div>
+    <form action="php/form.php" method="post" id="test" name="test">
+      <div>
+        <label>お名前</label>
+        <input name="お名前" type="text">
+      </div>
+    
+      <div>
+        <label>メールアドレス [必須]</label>
+        <input name="メールアドレス" type="text">
+      </div>
+    
+      <div>
+        <label>お問い合わせ [必須]</label>
+      </div>
+    
+      <div>
+        <input type="text" name="param" id="inputparam">
+      </div>
+    
+      <button type="submit">送信</button>
+    </form>
+    
+    <script type="text/javascript" src="app.js"></script> 
+
+</body>
+
+</html> -->
+<!-- クイズ<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptの学習</title>
+    <link rel="manitest" href="site.webmanitest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <div class="container">
+    <div id="js-question" class="mt-3 alert alert-primary" role="alert">
+        A simple primary alert-check it out!
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn-primary">Primary</button>
+        <button type="button" class="ml-1 btn btn-primary">Primary</button>
+        <button type="button" class="ml-1 btn btn-primary">Primary</button>
+        <button type="button" class="ml-1 btn btn-primary">Primary</button>
+        
+    </div>
+</div>
+   <script type="text/javascript" src="app.js"></script> 
+
+</body>
+
+</html> -->
+<!-- 課題下書き<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptの学習</title>
+</head>
+
+<body>
+    <p>キーワード:</p>
+    <input type="text" id="text" >
+    <button id="seach1">検索</button>
+    <a></a>
+    <p id="p"></p>
+     <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html> -->
+<!-- モーダル表示<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptの学習</title>
+</head>
+
+<body>
+    <div class="popup" id="firstTimeModal">
+        <div class="popup-inner">
+          <div class="modalCloseButton" id="modalCloseCloss"><span class="lineClose"></span></div>
+          <img src="https://dubdesign.net/wp-content/uploads/2022/02/java_modaltoc-1024x587.jpg" alt="ポップアップ画像">
+          <div class="modalBottom"><p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市。</p></div>
+        </div>
+        <div class="black-background" id="js-black-bg"></div>
+      </div>
+     <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html> -->
+<!-- 課題テスト<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptの学習</title>
+</head>
+
+<body>
+    <p>キーワード:</p>
+    <input type="text" id="text" >
+    <button id="button">検索</button>
+    <p id="p"></p>
+     <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html> -->
+<!-- マップ検索<!DOCTYPE html>
+<html>
+  <head>
+    <title>Places Search Box</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initAutocomplete&libraries=places&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+   <input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Search Box"
+    />
+    <div id="map"></div>
+  </body>
+</html> -->

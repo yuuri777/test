@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptの学習</title>
+    </head>
+
+<body>
+    <div class="popup" id="firstTimeModal">
+        <div class="popup-inner">
+          <div class="modalCloseButton" id="modalCloseCloss"><span class="lineClose"></span></div>
+          <!-- ここに検索フォーム -->
+          <form role="search" method="get" id="searchform" class="searchform" action="https://api.doorkeeper.jp/events?q">
+          <!-- role="search" で対象のものを探す。method="get"で設定したURLのサイトなどを取得。　action=URLでformタグとサイトを連携。-->
+            <div>
+              <input type="search" placeholder="サイト内検索" id="s" class="searchform__input" name="s" value="" />
+              <button type="submit" id="searchsubmit" class="searchform__submit">検索<i class="fa fa-search"></i>
+              </button>
+          </div>
+      </form>
+          <!-- ここまで検索フォーム -->
+        </div>
+        <div class="black-background" id="js-black-bg"></div>
+      </div>
+     <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>

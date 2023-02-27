@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQueryの学習</title>
+
+    <!-- remodal css -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal-default-theme.min.css">
+
+    <!-- original css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+    <a href="#modal-01" class="btn1">風景１</a>
+    <div class="remodal" data-remodal-id="modal-01">
+        <div><img class="src1" src="img1.jpeg" alt=""></div>
+        <p>ダミーテキスト</p> 
+        <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+    </div>
+    </section>
+    <section>
+    <a href="#modal-02" class="btn2">風景２</a>
+    <div class="remodal" data-remodal-id="modal-02">
+        <div><img class="src2" src="img2.jpeg" alt=""></div>
+        <p>ダミーテキスト</p> 
+        <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+    </div>
+    </section>
+    <section>
+    <a href="#modal-03" class="btn3">風景３</a>
+    <div class="remodal" data-remodal-id="modal-03">
+        <div><img class="src3" src="img3.jpeg" alt=""></div>
+        <p>ダミーテキスト</p> 
+        <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+    </div>
+    </section>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- remodal js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.js"></script>
+
+    <!-- original js -->
+    <script src="app.js"></script>
+</body>
+
+</html>
